@@ -30,18 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		const formSelect = form.querySelector('.form__accordion')
 		const formDownload = form.querySelector('.form__download')
 
-		formSelect.addEventListener('click', e => {
-			const select = formSelect.querySelector('.form__accordion-select input')
+		formSelect?.addEventListener('click', e => {
+			const select = formSelect?.querySelector('.form__accordion-select input')
 			if (e.target.classList.contains('form__accordion-option')) {
-        
-        select.value = e.target.textContent.trim()
-        console.log(select.value);
+				select.value = e.target.textContent.trim()
 			}
 		})
 
-		const file = formDownload.querySelector('.form__download-file')
-		file.addEventListener('change', e => {
-			const text = formDownload.querySelector('.form__download-text')
+		const file = formDownload?.querySelector('.form__download-file')
+		file?.addEventListener('change', e => {
+			const text = formDownload?.querySelector('.form__download-text')
 			const fileName = e.target.files[0].name
 			text.textContent = fileName
 		})
@@ -297,4 +295,46 @@ document.addEventListener('DOMContentLoaded', () => {
 	Fancybox.bind('[data-fancybox]', {
 		// Your custom options
 	})
+
+	if (document.querySelector('#mapYandex')) {
+		const map = document.querySelector('.map')
+		const img = map.querySelector('.map__hidden-img')
+		const src = img.src
+		const text = map.querySelector('.map__hidden-text').textContent.trim()
+		var points = [
+			[
+				`<div class="map__ballon"><img class="map__ballon-img" src="${src}" alt=""><p class="map__ballon-text">${text}</p></div>`,
+				55.823464,
+				37.497568,
+			],
+		]
+
+		ymaps.ready(init)
+
+		function init() {
+			var myMap = new ymaps.Map('mapYandex', {
+				center: [55.823464, 37.497568],
+				zoom: 12,
+			})
+
+			var myCollection = new ymaps.GeoObjectCollection()
+
+			for (var i = 0; i < points.length; i++) {
+				var myPlacemark = new ymaps.Placemark(
+					[points[i][1], points[i][2]],
+					{
+						balloonContent: points[i][0],
+					},
+					{
+						iconLayout: 'default#image',
+						iconImageHref: '../../assets/images/icons/loca.svg',
+						// iconImageSize: [48, 48],
+					}
+				)
+				myCollection.add(myPlacemark)
+			}
+
+			myMap.geoObjects.add(myCollection)
+		}
+	}
 })
