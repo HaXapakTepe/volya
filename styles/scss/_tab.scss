@@ -1,0 +1,15 @@
+.tab {
+  &__info {
+    display: none;
+    opacity: 0;
+    transition: opacity .23s ease-in-out;
+
+    &--active {
+      display: block;
+    }
+
+    &--opacity {
+      opacity: 1;
+    }
+  }
+}

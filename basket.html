@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles/css/normalize.css" />
+  <link rel="stylesheet" href="./styles/css/style.min.css" />
+  <title>Cart</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <nav class="menu">
+      <div class="menu__inner">
+        <div class="menu__top">
+          <p class="menu__top-title">
+            Мужчины
+          </p>
+          <p class="menu__top-title">
+            Женщины
+          </p>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <p class="menu__list-title accordionNext">
+              Каталог
+            </p>
+            <div class="accordionNext-content">
+              <div class="menu__list-column">
+                <a class="menu__list-link" href="#">
+                  Футболки
+                </a>
+                <a class="menu__list-link" href="#">
+                  Худи/Свитшоты
+                </a>
+                <a class="menu__list-link" href="#">
+                  Бельё/Купальники
+                </a>
+                <a class="menu__list-link" href="#">
+                  Брюки/джоггеры
+                </a>
+                <a class="menu__list-link" href="#">
+                  Леггинсы/капри
+                </a>
+                <a class="menu__list-link" href="#">
+                  Аксессуары
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="menu__list-item">
+            <p class="menu__list-title accordionNext">
+              Коллекции
+            </p>
+            <div class="accordionNext-content">
+              <div class="menu__list-column">
+                <a class="menu__list-link" href="#">
+                  Великие и любимые
+                </a>
+                <a class="menu__list-link" href="#">
+                  Base VLWR
+                </a>
+                <a class="menu__list-link" href="#">
+                  Liasan Collection
+                </a>
+                <a class="menu__list-link" href="#">
+                  UCHITE RUSSKIY YAZIK
+                </a>
+                <a class="menu__list-link" href="#">
+                  Спорт есть молодость
+                </a>
+                <a class="menu__list-link" href="#">
+                  VOLЯ WEAR x HIGH SAFETY
+                </a>
+                <a class="menu__list-link" href="#">
+                  КНИГИ
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="menu__list-item">
+            <div class="menu__list-column">
+              <a class="menu__list-link" href="#">
+                Главная страница
+              </a>
+              <a class="menu__list-link" href="#">
+                Оплата и доставка
+              </a>
+              <a class="menu__list-link" href="#">
+                Условия обмена и возврата
+              </a>
+              <a class="menu__list-link" href="#">
+                Подарочные сертификаты
+              </a>
+              <a class="menu__list-link" href="#">
+                Бонусная программа
+              </a>
+              <a class="menu__list-link" href="#">
+                О нас
+              </a>
+              <a class="menu__list-link" href="#">
+                Контакты
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__bottom">
+        <div class="menu__bottom-item">
+          <a class="phone phone--black" href="tel:+79299265576">
+            +7 929 926 55 76
+          </a>
+          <p class="menu__bottom-text">
+            Ежедневно с 10:00 до 21:00
+          </p>
+        </div>
+        <div class="menu__bottom-links">
+          <a class="menu__bottom-link" href="tel:">
+            Публичная оферта
+          </a>
+          <a class="menu__bottom-link" href="tel:">
+            Условия обмена и возврата
+          </a>
+        </div>
+        <div class="icons">
+          <a class="icons__link" href="#">
+            <img class="icons__icon" src="./assets/images/icons/tg-black.svg" alt="">
+          </a>
+          <a class="icons__link" href="#">
+            <img class="icons__icon" src="./assets/images/icons/vk-black.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="./assets/images/logo.svg" alt="" />
+          </a>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+          <div class="icons">
+            <a class="icons__link" href="#">
+              <img class="icons__icon" src="./assets/images/icons/search.svg" alt="">
+            </a>
+            <a class="icons__link" href="#">
+              <img class="icons__icon" src="./assets/images/icons/heart.svg" alt="">
+            </a>
+            <a class="icons__link" href="#">
+              <img class="icons__icon" src="./assets/images/icons/user.svg" alt="">
+            </a>
+            <a class="icons__link" href="#">
+              <img class="icons__icon" src="./assets/images/icons/basket.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="basket">
+        <div class="container">
+          <div class="basket__inner">
+            <h2 class="title title--left">
+              Корзина
+              <sup>
+                2 товара
+              </sup>
+            </h2>
+            <form class="basket__form" action="" method="post">
+              <div class="basket__form-top">
+                <label class="label check-all">
+                  <input class="label__input check" type="checkbox" />
+                  <span class="label__inputCustom"></span>
+                  Выбрать все
+                </label>
+                <div class="basket__delete basket__delete--all">
+                  <img class="basket__delete-icon" src="./assets/images/icons/close.svg" alt="">
+                  <p class="basket__delete-text">
+                    Удалить выбранное
+                  </p>
+                </div>
+              </div>
+              <div class="basket__form-inner">
+                <div class="basket__form-inner-box">
+                  <div class="basket__item">
+                    <div class="basket__item-box">
+                      <label class="label">
+                        <input class="label__input check" type="checkbox" />
+                        <span class="label__inputCustom"></span>
+                      </label>
+                      <div class="basket__item-background">
+                        <img class="basket__item-img" src="./assets/images/basket/1.png" alt="">
+                        <div class="favorite">
+                          <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                          <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket__item-info">
+                      <div class="basket__item-column">
+                        <p class="basket__item-title">
+                          Базовая футболка прямая унисекс 3.0 (белая)
+                        </p>
+                        <p class="basket__item-weight">
+                          Размер L
+                        </p>
+                      </div>
+                      <p class="basket__item-price">
+                        5 240 ₽
+                      </p>
+                      <div class="basket__delete">
+                        <img class="basket__delete-icon" src="./assets/images/icons/close.svg" alt="">
+                        <p class="basket__delete-text">
+                          Удалить
+                        </p>
+                      </div>
+                      <div class="count">
+                        <div class="count__minus"></div>
+                        <div class="count__num">1</div>
+                        <div class="count__plus"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket__item">
+                    <div class="basket__item-box">
+                      <label class="label">
+                        <input class="label__input check" type="checkbox" />
+                        <span class="label__inputCustom"></span>
+                      </label>
+                      <div class="basket__item-background">
+                        <img class="basket__item-img" src="./assets/images/basket/2.png" alt="">
+                        <div class="favorite">
+                          <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                          <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket__item-info">
+                      <div class="basket__item-column">
+                        <p class="basket__item-title">
+                          Базовая футболка прямая унисекс 3.0 (белая)
+                        </p>
+                        <p class="basket__item-weight">
+                          Размер L
+                        </p>
+                      </div>
+                      <p class="basket__item-price">
+                        5 240 ₽
+                      </p>
+                      <div class="basket__delete">
+                        <img class="basket__delete-icon" src="./assets/images/icons/close.svg" alt="">
+                        <p class="basket__delete-text">
+                          Удалить
+                        </p>
+                      </div>
+                      <div class="count">
+                        <div class="count__minus"></div>
+                        <div class="count__num">1</div>
+                        <div class="count__plus"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket__item">
+                    <div class="basket__item-box">
+                      <label class="label">
+                        <input class="label__input check" type="checkbox" />
+                        <span class="label__inputCustom"></span>
+                      </label>
+                      <div class="basket__item-background">
+                        <img class="basket__item-img" src="./assets/images/basket/3.png" alt="">
+                        <div class="favorite">
+                          <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                          <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket__item-info">
+                      <div class="basket__item-column">
+                        <p class="basket__item-title">
+                          Базовая футболка прямая унисекс 3.0 (белая)
+                        </p>
+                        <p class="basket__item-weight">
+                          Размер L
+                        </p>
+                      </div>
+                      <p class="basket__item-price">
+                        5 240 ₽
+                      </p>
+                      <div class="basket__delete">
+                        <img class="basket__delete-icon" src="./assets/images/icons/close.svg" alt="">
+                        <p class="basket__delete-text">
+                          Удалить
+                        </p>
+                      </div>
+                      <div class="count">
+                        <div class="count__minus"></div>
+                        <div class="count__num">1</div>
+                        <div class="count__plus"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="basket__form-inner-box">
+                  <div class="total">
+                    <p class="total__title">
+                      Ваша корзина
+                    </p>
+                    <div class="total__box">
+                      <p class="total__textGray">
+                        Товары, 2 шт.
+                      </p>
+                      <p class="total__textGray">
+                        14 680 ₽
+                      </p>
+                    </div>
+                    <div class="total__box">
+                      <p class="total__text">
+                        Итого
+                      </p>
+                      <p class="total__text">
+                        14 680 ₽
+                      </p>
+                    </div>
+                    <button class="btn btn--accent">
+                      к оформлению
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__item">
+            <a class="phone" href="tel:+79299265576">
+              +7 929 926 55 76
+            </a>
+            <p class="footer__item-text">
+              Ежедневно с 10:00 до 21:00
+            </p>
+          </div>
+          <div class="footer__links">
+            <a class="footer__links-link" href="tel:">
+              Оплата и доставка
+            </a>
+            <a class="footer__links-link" href="tel:">
+              Публичная оферта
+            </a>
+            <a class="footer__links-link" href="tel:">
+              Условия обмена и возврата
+            </a>
+            <a class="footer__links-link" href="tel:">
+              Политика конфиденциальности
+            </a>
+            <a class="footer__links-link" href="tel:">
+              Контакты
+            </a>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-copy">
+              © 2018—2024, VOLЯ WEAR
+              <br>
+              Все права защищены
+            </p>
+            <div class="icons">
+              <a class="icons__link" href="#">
+                <img class="icons__icon" src="./assets/images/icons/tg.svg" alt="">
+              </a>
+              <a class="icons__link" href="#">
+                <img class="icons__icon" src="./assets/images/icons/vk.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

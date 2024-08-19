@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// &::-webkit-scrollbar {
+// 	width: 5px;
+// 	background-color: transparent;
+// }
+
+// &::-webkit-scrollbar-thumb {
+// 	background-color: #6C6C6C;
+// 	border-radius: 25px;
+// }
+
+// &::-webkit-scrollbar-track {
+// 	margin: 5px;
+// }
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+// кастомная нумерация блоков
+// ol {
+//   counter-reset: num;
+//   list-style: decimal-leading-zero;
+
+//   li {
+//     &:before {
+//       content: counter(num, decimal-leading-zero);
+//       counter-increment: num;
+//       color: #FF7707;
+//       font-size: 40px;
+//       font-weight: 500;
+//       line-height: 120%;
+//       letter-spacing: -0.2px;
+//     }
+//   }
+// }
+
+// кол-во строк в блоке
+// * {
+//   display: -webkit-box;
+//   line-clamp: 4;
+//   -webkit-line-clamp: 4;
+//   -webkit-box-orient: vertical;
+//   overflow: hidden;
+// }
+// обратиться к label в котором input
+// &:focus-within {
+//   border-color: #D9291D;
+// }
+
+// фокус лейблу родителю
+// &:focus-within {
+//   border-color: #d9291d;
+// }
+
+textarea {
+  resize: none;
+}
+
+textarea,
+input,
+button {
+  font: inherit;
+  outline: none;
+  background-color: transparent;
+}
+
+fieldset {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: .02em;
+  color: #202020;
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+.wrapper {
+  // min-height: 100dvh;
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.container {
+  // контейнер + padding с двух сторон
+  @include fluid(width, 962px, 1438px);
+  @include container;
+}
+
+[class$='__icon'],
+[class$='-icon'] {
+  display: flex;
+  align-items: center;
+
+  svg {
+    path {
+      transition: fill 0.23s ease-in-out, stroke 0.23s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 1366px) {}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}

@@ -1,0 +1,37 @@
+.yourOrder {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  &__title {
+    max-width: 1180px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__inner {
+    max-width: 1180px;
+    display: grid;
+    grid-template-columns: 1fr minmax(315px, 350px);
+    @include fluid(gap, 36px, 82px);
+    margin-right: auto;
+    margin-left: auto;
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  &__title {
+    text-align: left;
+  }
+}
+
+@media(max-width:768px) {
+  .yourOrder {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}

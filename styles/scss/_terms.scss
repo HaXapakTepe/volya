@@ -1,0 +1,46 @@
+.terms {
+  margin-top: 40px;
+  @include fluid(margin-bottom, 40px, 60px);
+
+  &__title {
+    text-align: left;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    @include fluid(gap, 48px, 90px);
+  }
+
+  &__text {
+    &:has(+*) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__box {
+    &:has(+*) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__ol {
+    counter-reset: num;
+
+    &-item {
+      &:before {
+        content: counter(num)'. ';
+        counter-increment: num;
+        color: #FF4D26;
+      }
+    }
+  }
+
+  &__ul {
+    &-item {
+      &:before {
+        content: '— ';
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+.customPagination {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.customPagination--small {
+    width: 24px;
+    height: 24px;
+    transform: scale(1);
+
+    .swiper-pagination {
+      width: 24px;
+      height: 24px;
+
+      &-bullet {
+        width: 11px;
+        height: 11px;
+
+        &:nth-child(6n+1) {
+          top: 0;
+          left: 0;
+
+          &::after {
+            width: 10px;
+            height: 6px;
+            background-image: url('../../assets/images/swiper/alt-1.svg');
+          }
+        }
+
+        &:nth-child(6n+2) {
+          top: 0;
+          right: -6px;
+
+          &::after {
+            width: 9px;
+            height: 8px;
+            background-image: url('../../assets/images/swiper/alt-2.svg');
+          }
+        }
+
+        &:nth-child(6n+3) {
+          top: 8.5px;
+          right: -12.5px;
+
+          &::after {
+            width: 4px;
+            height: 11px;
+            background-image: url('../../assets/images/swiper/alt-3.svg');
+          }
+        }
+
+        &:nth-child(6n+4) {
+          bottom: -5.5px;
+          right: -3.5px;
+
+          &::after {
+            width: 10px;
+            height: 6px;
+            background-image: url('../../assets/images/swiper/alt-4.svg');
+          }
+        }
+
+        &:nth-child(6n+5) {
+          bottom: -3.5px;
+          left: -2px;
+
+          &::after {
+            width: 9px;
+            height: 8px;
+            background-image: url('../../assets/images/swiper/alt-5.svg');
+          }
+        }
+
+        &:nth-child(6n+6) {
+          top: 5px;
+          left: -3px;
+
+          &::after {
+            width: 4px;
+            height: 11px;
+            background-image: url('../../assets/images/swiper/alt-6.svg');
+          }
+        }
+
+        &.swiper-pagination-bullet-active {
+          opacity: 1;
+
+          &:nth-child(6n+1) {
+            &::after {
+              background-image: url('../../assets/images/swiper/alt-1-1.svg');
+            }
+          }
+
+          &:nth-child(6n+2) {
+            &::after {
+              background-image: url('../../assets/images/swiper/alt-2-1.svg');
+            }
+          }
+
+          &:nth-child(6n+3) {
+            &::after {
+              background-image: url('../../assets/images/swiper/alt-3-1.svg');
+            }
+          }
+
+          &:nth-child(6n+4) {
+            &::after {
+              background-image: url('../../assets/images/swiper/alt-4-1.svg');
+            }
+          }
+
+          &:nth-child(6n+5) {
+            &::after {
+              background-image: url('../../assets/images/swiper/alt-5-1.svg');
+            }
+          }
+
+          &:nth-child(6n+6) {
+            &::after {
+              background-image: url('../../assets/images/swiper/alt-6-1.svg');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-pagination {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    bottom: unset;
+    top: unset;
+    left: unset;
+    right: unset;
+
+    &-bullet {
+      position: absolute;
+      background-color: transparent;
+      opacity: 0;
+      width: 20px;
+      height: 20px;
+      transition: opacity 0.23s ease-in-out;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      &:nth-child(-n+6) {
+        opacity: .5;
+      }
+
+      &:nth-child(6n+1) {
+        top: 0;
+        left: -2.5px;
+
+        &::after {
+          width: 19px;
+          height: 10px;
+          background-image: url('../../assets/images/swiper/1.svg');
+        }
+      }
+
+      &:nth-child(6n+2) {
+        top: 0;
+        right: -.5px;
+
+        &::after {
+          width: 17px;
+          height: 15px;
+          background-image: url('../../assets/images/swiper/2.svg');
+        }
+      }
+
+      &:nth-child(6n+3) {
+        top: 16px;
+        right: -12.5px;
+
+        &::after {
+          width: 7px;
+          height: 20px;
+          background-image: url('../../assets/images/swiper/3.svg');
+        }
+      }
+
+      &:nth-child(6n+4) {
+        bottom: -10px;
+        right: 5.5px;
+
+        &::after {
+          width: 19px;
+          height: 10px;
+          background-image: url('../../assets/images/swiper/4.svg');
+        }
+      }
+
+      &:nth-child(6n+5) {
+        bottom: -5px;
+        left: -6.5px;
+
+        &::after {
+          width: 17px;
+          height: 15px;
+          background-image: url('../../assets/images/swiper/5.svg');
+        }
+      }
+
+      &:nth-child(6n+6) {
+        top: 10px;
+        left: -8.5px;
+
+        &::after {
+          width: 7px;
+          height: 20px;
+          background-image: url('../../assets/images/swiper/6.svg');
+        }
+      }
+
+      &.swiper-pagination-bullet-active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media(max-width:992px) {
+  .customPagination {
+    transform: scale(.74);
+  }
+}

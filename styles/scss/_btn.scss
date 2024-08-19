@@ -1,0 +1,66 @@
+.btn {
+  width: 100%;
+  display: block;
+  padding: 18px;
+  font-size: 16px;
+  color: #FF4D26;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #FF4D26;
+  text-transform: uppercase;
+  transition: background-color 0.23s ease-in-out,
+    color 0.23s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: #FF4D26;
+    background-color: #FF4D26;
+  }
+
+  &--accent {
+    color: #fff;
+    background-color: #FF4D26;
+    letter-spacing: .4em;
+
+    &:hover {
+      color: #FF4D26;
+      background-color: #fff;
+    }
+  }
+
+  &--label {
+    &:hover {
+      background-color: #fff;
+      border-color: #FF4D26;
+    }
+
+    &:has(.btn__icon) {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+    }
+
+    &:has(.check:checked) {
+      position: relative;
+      background-color: #FF4D26;
+    }
+
+    .check:checked {
+      +.btn__icon {
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &__icon {
+    svg {
+      path {
+        transition: fill .23s ease-in-out;
+      }
+    }
+  }
+}

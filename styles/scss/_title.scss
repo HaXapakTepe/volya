@@ -1,0 +1,28 @@
+.title {
+  @include fluid(margin-bottom, 20px, 40px);
+  font-size: 24px;
+  color: #FF4D26;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  @include fluid(letter-spacing, 1px, 65px);
+
+  &--ltAlt {
+    @include fluid(margin-bottom, 20px, 23px);
+    @include fluid(letter-spacing, 1px, 35px);
+  }
+
+  &--left {
+    text-align: left;
+  }
+}
+
+h1.title {
+  @include fluid(font-size, 40px, 72px);
+  line-height: 1;
+  color: #202020;
+  letter-spacing: .05em;
+  text-align: left;
+  margin-bottom: 0;
+}
