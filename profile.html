@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles/css/normalize.css" />
+  <link rel="stylesheet" href="./styles/css/style.min.css" />
+  <title>Profile</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <nav class="menu">
+      <div class="menu__inner">
+        <div class="menu__top">
+          <p class="menu__top-title">
+            Мужчины
+          </p>
+          <p class="menu__top-title">
+            Женщины
+          </p>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <p class="menu__list-title accordionNext">
+              Каталог
+            </p>
+            <div class="accordionNext-content">
+              <div class="menu__list-column">
+                <a class="menu__list-link" href="#">
+                  Футболки
+                </a>
+                <a class="menu__list-link" href="#">
+                  Худи/Свитшоты
+                </a>
+                <a class="menu__list-link" href="#">
+                  Бельё/Купальники
+                </a>
+                <a class="menu__list-link" href="#">
+                  Брюки/джоггеры
+                </a>
+                <a class="menu__list-link" href="#">
+                  Леггинсы/капри
+                </a>
+                <a class="menu__list-link" href="#">
+                  Аксессуары
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="menu__list-item">
+            <p class="menu__list-title accordionNext">
+              Коллекции
+            </p>
+            <div class="accordionNext-content">
+              <div class="menu__list-column">
+                <a class="menu__list-link" href="#">
+                  Великие и любимые
+                </a>
+                <a class="menu__list-link" href="#">
+                  Base VLWR
+                </a>
+                <a class="menu__list-link" href="#">
+                  Liasan Collection
+                </a>
+                <a class="menu__list-link" href="#">
+                  UCHITE RUSSKIY YAZIK
+                </a>
+                <a class="menu__list-link" href="#">
+                  Спорт есть молодость
+                </a>
+                <a class="menu__list-link" href="#">
+                  VOLЯ WEAR x HIGH SAFETY
+                </a>
+                <a class="menu__list-link" href="#">
+                  КНИГИ
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="menu__list-item">
+            <div class="menu__list-column">
+              <a class="menu__list-link" href="#">
+                Главная страница
+              </a>
+              <a class="menu__list-link" href="#">
+                Оплата и доставка
+              </a>
+              <a class="menu__list-link" href="#">
+                Условия обмена и возврата
+              </a>
+              <a class="menu__list-link" href="#">
+                Подарочные сертификаты
+              </a>
+              <a class="menu__list-link" href="#">
+                Бонусная программа
+              </a>
+              <a class="menu__list-link" href="#">
+                О нас
+              </a>
+              <a class="menu__list-link" href="#">
+                Контакты
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__bottom">
+        <div class="menu__bottom-item">
+          <a class="phone phone--black" href="tel:+79299265576">
+            +7 929 926 55 76
+          </a>
+          <p class="menu__bottom-text">
+            Ежедневно с 10:00 до 21:00
+          </p>
+        </div>
+        <div class="menu__bottom-links">
+          <a class="menu__bottom-link" href="tel:">
+            Публичная оферта
+          </a>
+          <a class="menu__bottom-link" href="tel:">
+            Условия обмена и возврата
+          </a>
+        </div>
+        <div class="icons">
+          <a class="icons__link" href="#">
+            <img class="icons__icon" src="./assets/images/icons/tg-black.svg" alt="">
+          </a>
+          <a class="icons__link" href="#">
+            <img class="icons__icon" src="./assets/images/icons/vk-black.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="./assets/images/logo.svg" alt="" />
+          </a>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+          <div class="icons">
+            <a class="icons__link" href="#">
+              <img class="icons__icon" src="./assets/images/icons/search.svg" alt="">
+            </a>
+            <a class="icons__link" href="#">
+              <img class="icons__icon" src="./assets/images/icons/heart.svg" alt="">
+            </a>
+            <a class="icons__link" href="#">
+              <img class="icons__icon" src="./assets/images/icons/user.svg" alt="">
+            </a>
+            <a class="icons__link" href="#">
+              <img class="icons__icon" src="./assets/images/icons/basket.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="profile">
+        <div class="container">
+          <div class="profile__inner tab">
+            <div class="profile__inner-box">
+              <div class="profile__target">
+                <p class="profile__target-item tab__target tab__target--active">
+                  Заказы
+                </p>
+                <p class="profile__target-item tab__target">
+                  Избранное
+                </p>
+                <p class="profile__target-item tab__target">
+                  Мои данные
+                </p>
+                <p class="profile__target-item tab__target">
+                  Бонусы
+                </p>
+              </div>
+            </div>
+            <div class="profile__inner-box">
+              <div class="tab__info tab__info--active tab__info--opacity">
+                <div class="profile__order">
+                  <p class="profile__order-title title title--left">
+                    Заказы
+                  </p>
+                  <div class="profile__order-inner">
+                    <div class="profile__order-item">
+                      <div class="profile__order-column">
+                        <p class="profile__order-text">
+                          №3141 на 25 583₽
+                        </p>
+                        <p class="profile__order-state">
+                          В пути
+                        </p>
+                      </div>
+                      <div class="profile__order-box">
+                        <div class="content">
+                          <div class="content__profile">
+                            <div class="content__swiper content__swiper--small swiper">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery1"
+                                        src="./assets/images/content/1.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery1"
+                                        src="./assets/images/content/2.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery1"
+                                        src="./assets/images/content/3.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery1"
+                                        src="./assets/images/content/4.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery1"
+                                        src="./assets/images/content/5.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery1"
+                                        src="./assets/images/content/6.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content__customPagination customPagination customPagination--small">
+                                <div class="customPagination__swiper-pagination swiper-pagination"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="content__profile">
+                            <div class="content__swiper content__swiper--small swiper">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery2"
+                                        src="./assets/images/content/2.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery2"
+                                        src="./assets/images/content/2.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery2"
+                                        src="./assets/images/content/3.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery2"
+                                        src="./assets/images/content/4.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery2"
+                                        src="./assets/images/content/5.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery2"
+                                        src="./assets/images/content/6.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content__customPagination customPagination customPagination--small">
+                                <div class="customPagination__swiper-pagination swiper-pagination"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="content__profile">
+                            <div class="content__swiper content__swiper--small swiper">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery3"
+                                        src="./assets/images/content/3.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery3"
+                                        src="./assets/images/content/2.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery3"
+                                        src="./assets/images/content/3.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery3"
+                                        src="./assets/images/content/4.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery3"
+                                        src="./assets/images/content/5.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery3"
+                                        src="./assets/images/content/6.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content__customPagination customPagination customPagination--small">
+                                <div class="customPagination__swiper-pagination swiper-pagination"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile__order-item">
+                      <div class="profile__order-top">
+                        <div class="profile__order-column">
+                          <p class="profile__order-text">
+                            №3128 на 5 583₽
+                          </p>
+                          <p class="profile__order-state profile__order-state--delivered">
+                            Доставлен 15.03.2024
+                          </p>
+                        </div>
+                        <a class="btn btn--gray" href="#">
+                          ОФОРМИТЬ ВОЗВРАТ
+                        </a>
+                      </div>
+                      <div class="profile__order-box">
+                        <div class="content">
+                          <div class="content__profile">
+                            <div class="content__swiper content__swiper--small swiper">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery4"
+                                        src="./assets/images/content/4.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery4"
+                                        src="./assets/images/content/2.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery4"
+                                        src="./assets/images/content/3.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery4"
+                                        src="./assets/images/content/4.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery4"
+                                        src="./assets/images/content/5.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery4"
+                                        src="./assets/images/content/6.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content__customPagination customPagination customPagination--small">
+                                <div class="customPagination__swiper-pagination swiper-pagination"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="content__profile">
+                            <div class="content__swiper content__swiper--small swiper">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery5"
+                                        src="./assets/images/content/5.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery5"
+                                        src="./assets/images/content/2.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery5"
+                                        src="./assets/images/content/3.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery5"
+                                        src="./assets/images/content/4.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery5"
+                                        src="./assets/images/content/5.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery5"
+                                        src="./assets/images/content/6.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content__customPagination customPagination customPagination--small">
+                                <div class="customPagination__swiper-pagination swiper-pagination"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile__order-item">
+                      <div class="profile__order-column">
+                        <p class="profile__order-text">
+                          №3428 на 15 583₽
+                        </p>
+                        <p class="profile__order-state profile__order-state--cancelled">
+                          Отменен
+                        </p>
+                      </div>
+                      <div class="profile__order-box">
+                        <div class="content">
+                          <div class="content__profile">
+                            <div class="content__swiper content__swiper--small swiper">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery6"
+                                        src="./assets/images/content/6.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery6"
+                                        src="./assets/images/content/2.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery6"
+                                        src="./assets/images/content/3.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery6"
+                                        src="./assets/images/content/4.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery6"
+                                        src="./assets/images/content/5.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery6"
+                                        src="./assets/images/content/6.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content__customPagination customPagination customPagination--small">
+                                <div class="customPagination__swiper-pagination swiper-pagination"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="content__profile">
+                            <div class="content__swiper content__swiper--small swiper">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery7"
+                                        src="./assets/images/content/1.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery7"
+                                        src="./assets/images/content/2.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery7"
+                                        src="./assets/images/content/3.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery7"
+                                        src="./assets/images/content/4.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery7"
+                                        src="./assets/images/content/5.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="content__slide">
+                                    <div class="content__slide-box">
+                                      <img class="content__slide-img" data-fancybox="contentGallery7"
+                                        src="./assets/images/content/6.png" alt="">
+                                      <div class="favorite">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+                                      </div>
+                                    </div>
+                                    <div class="content__slide-bot">
+                                      <p class="content__slide-title">
+                                        Джоггеры VOLЯ WEAR женские (черный)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content__customPagination customPagination customPagination--small">
+                                <div class="customPagination__swiper-pagination swiper-pagination"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab__info"></div>
+              <div class="tab__info"></div>
+              <div class="tab__info"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__item">
+            <a class="phone" href="tel:+79299265576">
+              +7 929 926 55 76
+            </a>
+            <p class="footer__item-text">
+              Ежедневно с 10:00 до 21:00
+            </p>
+          </div>
+          <div class="footer__links">
+            <a class="footer__links-link" href="tel:">
+              Оплата и доставка
+            </a>
+            <a class="footer__links-link" href="tel:">
+              Публичная оферта
+            </a>
+            <a class="footer__links-link" href="tel:">
+              Условия обмена и возврата
+            </a>
+            <a class="footer__links-link" href="tel:">
+              Политика конфиденциальности
+            </a>
+            <a class="footer__links-link" href="tel:">
+              Контакты
+            </a>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-copy">
+              © 2018—2024, VOLЯ WEAR
+              <br>
+              Все права защищены
+            </p>
+            <div class="icons">
+              <a class="icons__link" href="#">
+                <img class="icons__icon" src="./assets/images/icons/tg.svg" alt="">
+              </a>
+              <a class="icons__link" href="#">
+                <img class="icons__icon" src="./assets/images/icons/vk.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

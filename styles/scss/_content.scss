@@ -2,6 +2,10 @@
   @include fluid(margin-top, 80px, 100px);
   @include fluid(margin-bottom, 80px, 140px);
 
+  &:has(.content__profile) {
+    margin: 0;
+  }
+
   &--alt {
     @include fluid(margin-top, 40px, 60px);
     margin-bottom: 60px;
@@ -171,6 +175,14 @@
       font-size: 12px;
       text-transform: uppercase;
     }
+
+    &-title {
+      display: -webkit-box;
+      line-clamp: 2;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
   }
 
   &__customPagination {
@@ -183,6 +195,10 @@
 
 @media(max-width:992px) {
   .content {
+    &:has(.content__profile) {
+      width: 49%;
+    }
+
     &__inner {
 
       &--typeOneAlt {
@@ -269,6 +285,12 @@
     &__customPagination {
       top: 510px;
     }
+
+    &__profile {
+      .content__swiper--small {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -321,9 +343,28 @@
 
 @media(max-width:576px) {
   .content {
+    &:has(.content__profile) {
+      width: 100%;
+    }
+
     &--small {
       .content__inner {
         max-width: 360px;
+      }
+    }
+
+    &__profile {
+      .content__swiper--small {
+
+        .content__slide {
+          &-box {
+            height: 123px;
+          }
+
+          &-img {
+            border-radius: 5px;
+          }
+        }
       }
     }
 
