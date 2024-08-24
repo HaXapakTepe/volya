@@ -356,8 +356,16 @@
     }
 
     &--small {
-      .content__inner {
-        max-width: 360px;
+      .content {
+        &__inner {
+          max-width: 360px;
+        }
+
+        &__slide {
+          &-box {
+            height: 246px;
+          }
+        }
       }
     }
 
