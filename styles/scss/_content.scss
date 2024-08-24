@@ -278,6 +278,13 @@
       }
 
       &--small {
+        .content {
+          &__slide {
+            &-box {
+              height: 350px;
+            }
+          }
+        }
         +.content__swiper--small {
           margin-left: auto;
         }
@@ -321,6 +328,7 @@
 
     &__swiper {
 
+      &--small,
       &--average {
         .content {
           &__slide {
@@ -356,16 +364,8 @@
     }
 
     &--small {
-      .content {
-        &__inner {
-          max-width: 360px;
-        }
-
-        &__slide {
-          &-box {
-            height: 246px;
-          }
-        }
+      .content__inner {
+        max-width: 360px;
       }
     }
 
