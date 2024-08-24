@@ -33,7 +33,7 @@
     &:has(+.info__textBold) {
       margin-bottom: 30px
     }
-    
+
     a {
       color: #FF4D26;
       text-decoration: underline;
@@ -129,7 +129,9 @@
 @media(max-width:992px) {
   .info {
     &__inner {
-      grid-template-columns: 1fr;
+      &:has(.info__inner-box+.info__inner-box) {
+        grid-template-columns: 1fr;
+      }
 
       &-box {
         &:last-child {
