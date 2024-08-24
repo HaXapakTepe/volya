@@ -61,11 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		const filterOpen = filter?.querySelector('.filter--open')
 		const modal = filter?.querySelector('.filter__modal')
 		const close = filter?.querySelector('.close')
-		filterOpen.addEventListener('click', () => {
+		filterOpen?.addEventListener('click', () => {
 			modal.classList.add('filter__modal--active')
 			body.classList.add('no-scroll')
 		})
-		close.addEventListener('click', () => {
+		close?.addEventListener('click', () => {
 			modal.classList.remove('filter__modal--active')
 			body.classList.remove('no-scroll')
 		})
@@ -76,15 +76,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		const inputFields = item.querySelectorAll('.form__label-input')
 		const passwordIcon = item.querySelectorAll('.form__label-icon')
 
-		editButton.addEventListener('click', () => {
-			inputFields.forEach(input => {
+		editButton?.addEventListener('click', () => {
+			inputFields?.forEach(input => {
 				input.disabled = !input.disabled
 			})
 
-			if (editButton.textContent === 'сохранить') {
-				editButton.textContent = 'редактировать'
+			if (editButton?.textContent === 'сохранить') {
+				editButton?.textContent = 'редактировать'
 			} else {
-				editButton.textContent = 'сохранить'
+				editButton?.textContent = 'сохранить'
 			}
 		})
 
