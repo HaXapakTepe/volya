@@ -46,7 +46,7 @@
     &:has(.form__inner-box+.form__inner-box) {
       grid-template-columns: repeat(2, minmax(350px, -webkit-max-content));
       grid-template-columns: repeat(2, minmax(350px, max-content));
-    }
+    }    
 
     &-box {
       max-width: 350px;
@@ -321,7 +321,13 @@
 @media(max-width:992px) {
   .form {
     &__inner {
-      grid-template-columns: 1fr;
+      &:has(.form__inner-box+.form__inner-box) {
+        grid-template-columns: 1fr;
+      } 
+
+      &-box {
+        max-width: unset;
+      }
     }
   }
 }

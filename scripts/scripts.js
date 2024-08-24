@@ -81,10 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
 				input.disabled = !input.disabled
 			})
 
-			if (editButton?.textContent === 'сохранить') {
-				editButton?.textContent = 'редактировать'
+			if (editButton.textContent === 'сохранить') {
+				editButton.textContent = 'редактировать'
 			} else {
-				editButton?.textContent = 'сохранить'
+				editButton.textContent = 'сохранить'
 			}
 		})
 
