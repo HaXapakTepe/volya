@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					},
 					{
 						iconLayout: 'default#image',
-						iconImageHref: '../../assets/images/icons/loca.svg',
+						iconImageHref: '/volya/assets/images/icons/loca.svg',
 						// iconImageSize: [48, 48],
 					}
 				)
