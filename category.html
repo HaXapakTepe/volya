@@ -173,11 +173,11 @@
           <h2 class="title title--ltAlt">Свитшоты, худи, платья</h2>
           <div class="filter">
             <div class="filter__box">
-              <img class="filter__icon" src="./assets/images/icons/sort.svg" alt="">
               <p class="filter__text">
                 Сортировка:
               </p>
-              <div class="accordionIndex-content accordionIndex-content--pos">
+              <img class="filter__icon accordionNext" src="./assets/images/icons/sort.svg" alt="">
+              <div class="accordionNext-content accordionNext-content--pos">
                 <div class="filter__sort">
                   <p class="filter__sort-text filter__sort-text--active">
                     Популярные
@@ -194,25 +194,246 @@
                 </div>
               </div>
             </div>
-            <div class="filter__box accordionIndex">
+            <div class="filter__box filter--open">
               <img class="filter__icon" src="./assets/images/icons/filter.svg" alt="">
               <p class="filter__text filter__text--accent">
                 Фильтр
               </p>
             </div>
+            <div class="filter__modal">
+              <div class="filter__modal-inner">
+                <div class="product">
+                  <div class="close"></div>
+                  <h2 class="title title--left">
+                    Фильтр
+                  </h2>
+                  <form class="product__form" action="" method="post">
+                    <div class="product__form-column">
+                      <div class="product__block">
+                        <p class="product__subtitle">
+                          ПОЛ
+                        </p>
+                        <div class="product__block-box">
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Мужчины
+                          </label>
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Женщины
+                          </label>
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Дети
+                          </label>
+                        </div>
+                      </div>
+                      <div class="product__block">
+                        <p class="product__subtitle">
+                          Категория
+                        </p>
+                        <div class="product__block-box">
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Футболки
+                          </label>
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Худи/Свитшоты
+                          </label>
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Бельё/Купальники
+                          </label>
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Брюки/джоггеры
+                          </label>
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Леггинсы/капри
+                          </label>
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Аксессуары
+                          </label>
+
+                        </div>
+                      </div>
+                      <div class="product__block">
+                        <p class="product__subtitle">
+                          Коллекции
+                        </p>
+                        <div class="product__block-box">
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Великие и любимые
+                          </label>
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Base VLWR
+                          </label>
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Liasan Collection
+                          </label>
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            UCHITE RUSSKIY YAZIK
+                          </label>
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Спорт есть молодость
+                          </label>
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            VOLЯ WEAR x HIGH SAFETY
+                          </label>
+                          <label class="label">
+                            <input class="label__input check" type="checkbox" />
+                            <span class="label__inputCustom"></span>
+                            Книги
+                          </label>
+
+                        </div>
+                      </div>
+                      <div class="product__size">
+                        <p class="product__subtitle">
+                          Размер
+                        </p>
+                        <div class="product__size-box">
+                          <label class="label label--alt">
+                            <input class="label__input check" type="radio" name="size" checked />
+                            <span class="label__inputCustom"></span>
+                            xs
+                          </label>
+                          <label class="label label--alt">
+                            <input class="label__input check" type="radio" name="size" />
+                            <span class="label__inputCustom"></span>
+                            s
+                          </label>
+                          <label class="label label--alt">
+                            <input class="label__input check" type="radio" name="size" />
+                            <span class="label__inputCustom"></span>
+                            m
+                          </label>
+                          <label class="label label--alt">
+                            <input class="label__input check" type="radio" name="size" />
+                            <span class="label__inputCustom"></span>
+                            l
+                          </label>
+                          <label class="label label--alt">
+                            <input class="label__input check" type="radio" name="size" />
+                            <span class="label__inputCustom"></span>
+                            xl
+                          </label>
+                          <label class="label label--alt">
+                            <input class="label__input check" type="radio" name="size" />
+                            <span class="label__inputCustom"></span>
+                            xxl
+                          </label>
+                        </div>
+                        <a class="product__size-link" href="#">
+                          Таблица размеров
+                        </a>
+                      </div>
+                      <div class="product__colors">
+                        <p class="product__subtitle">
+                          Цвет
+                        </p>
+                        <div class="product__colors-box">
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" checked />
+                            <span class="label__inputCustom" style="background-color: #4579E5;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #88B3F9;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #EEEB4F;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #96D45A;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #DA9434;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #EE732F;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #5E5E5E;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #D8D8D8;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #0C29C6;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #AE3BDD;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #000000;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #D63D2F;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #FFFFFF;"></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="product__form-buttons">
+                        <button class="btn btn--fc">
+                          Сбросить
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="content__inner">
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery1"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -229,10 +450,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery1"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -249,10 +466,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery1"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -269,10 +482,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery1"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -289,10 +498,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery1"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -309,10 +514,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery1"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -330,16 +531,16 @@
               </div>
             </div>
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery2"
                         src="./assets/images/content/1.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -356,10 +557,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery2"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -376,10 +573,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery2"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -396,10 +589,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery2"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -416,10 +605,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery2"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -436,10 +621,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery2"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -457,16 +638,16 @@
               </div>
             </div>
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery3"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -483,10 +664,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery3"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -503,10 +680,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery3"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -523,10 +696,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery3"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -543,10 +712,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery3"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -563,10 +728,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery3"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -584,16 +745,16 @@
               </div>
             </div>
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery4"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -610,10 +771,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery4"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -630,10 +787,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery4"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -650,10 +803,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery4"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -670,10 +819,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery4"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -690,10 +835,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery4"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -713,16 +854,16 @@
           </div>
           <div class="content__inner content__inner--typeTwoReverse">
             <div class="content__swiper swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery8"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -739,10 +880,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery8"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -759,10 +896,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery8"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -779,10 +912,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery8"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -799,10 +928,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery8"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -819,10 +944,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery8"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -840,16 +961,16 @@
               </div>
             </div>
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery6"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -866,10 +987,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery6"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -886,10 +1003,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery6"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -906,10 +1019,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery6"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -926,10 +1035,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery6"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -946,10 +1051,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery6"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -967,16 +1068,16 @@
               </div>
             </div>
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery7"
                         src="./assets/images/content/1.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -993,10 +1094,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery7"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1013,10 +1110,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery7"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1033,10 +1126,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery7"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1053,10 +1142,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery7"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1073,10 +1158,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery7"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1096,16 +1177,16 @@
           </div>
           <div class="content__inner">
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery8"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1122,10 +1203,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery8"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1142,10 +1219,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery8"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1162,10 +1235,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery8"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1182,10 +1251,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery8"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1202,10 +1267,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery8"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1223,16 +1284,16 @@
               </div>
             </div>
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery9"
                         src="./assets/images/content/1.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1249,10 +1310,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery9"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1269,10 +1326,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery9"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1289,10 +1342,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery9"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1309,10 +1358,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery9"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1329,10 +1374,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery9"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1350,16 +1391,16 @@
               </div>
             </div>
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery10"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1376,10 +1417,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery10"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1396,10 +1433,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery10"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1416,10 +1449,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery10"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1436,10 +1465,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery10"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1456,10 +1481,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery10"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1477,16 +1498,16 @@
               </div>
             </div>
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery11"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1503,10 +1524,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery11"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1523,10 +1540,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery11"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1543,10 +1556,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery11"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1563,10 +1572,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery11"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1583,10 +1588,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery11"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1606,16 +1607,16 @@
           </div>
           <div class="content__inner">
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery12"
                         src="./assets/images/content/1.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1632,10 +1633,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery12"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1652,10 +1649,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery12"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1672,10 +1665,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery12"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1692,10 +1681,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery12"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1712,10 +1697,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery12"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1733,16 +1714,16 @@
               </div>
             </div>
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery13"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1759,10 +1740,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery13"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1779,10 +1756,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery13"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1799,10 +1772,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery13"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1819,10 +1788,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery13"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1839,10 +1804,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery13"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1860,16 +1821,16 @@
               </div>
             </div>
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery14"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1886,10 +1847,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery14"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1906,10 +1863,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery14"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1926,10 +1879,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery14"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1946,10 +1895,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery14"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1966,10 +1911,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery14"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -1987,16 +1928,16 @@
               </div>
             </div>
             <div class="content__swiper content__swiper--average swiper">
+              <div class="favorite">
+                <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
+                <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
+              </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content__slide">
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery15"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -2013,10 +1954,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery15"
                         src="./assets/images/content/2.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -2033,10 +1970,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery15"
                         src="./assets/images/content/3.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -2053,10 +1986,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery15"
                         src="./assets/images/content/4.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -2073,10 +2002,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery15"
                         src="./assets/images/content/5.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -2093,10 +2018,6 @@
                     <div class="content__slide-box">
                       <img class="content__slide-img" data-fancybox="contentGallery15"
                         src="./assets/images/content/6.png" alt="">
-                      <div class="favorite">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-gray.svg" alt="">
-                        <img class="favorite__icon" src="./assets/images/icons/heart-1.svg" alt="">
-                      </div>
                     </div>
                     <div class="content__slide-bot">
                       <p class="content__slide-title">
@@ -2221,7 +2142,7 @@
     </footer>
   </div>
 
-  
+
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>

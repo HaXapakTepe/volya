@@ -6,15 +6,21 @@
   color: #FF4D26;
   background-color: #fff;
   border-radius: 10px;
+  text-align: center;
   border: 1px solid #FF4D26;
   text-transform: uppercase;
   transition: background-color 0.23s ease-in-out,
     color 0.23s ease-in-out;
   cursor: pointer;
+  @include fluid(letter-spacing, 1px, 6px);
 
   &:hover {
     color: #fff;
     background-color: #FF4D26;
+  }
+
+  &--fc {
+    width: fit-content;
   }
 
   &--accent {

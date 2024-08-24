@@ -5,7 +5,11 @@
   @include fluid(margin-top, 20px, 23px);
   margin-bottom: 6px;
 
-  .accordionIndex {
+  .product {
+    margin-top: 0;
+  }
+
+  .accordionNext {
     &-content {
       max-height: 100%;
 
@@ -23,6 +27,10 @@
 
     &:last-child {
       pointer-events: none;
+    }
+
+    &.filter--open {
+      cursor: pointer;
     }
   }
 
@@ -60,19 +68,49 @@
       }
     }
   }
+
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: opacity 0.23s ease-in-out, visibility 0.23s ease-in-out, z-index 0.23s ease-in-out;
+
+    &--active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 15;
+    }
+
+    &-inner {
+      height: 100%;
+      max-width: 600px;
+      width: 100%;
+      margin-left: auto;
+      border-radius: 10px 0 0 10px;
+      padding: 24px;
+      background-color: #fff;
+    }
+  }
 }
 
 @media(max-width:768px) {
   .filter {
-    .accordionIndex {
+    .accordionNext {
       &-content {
         max-height: 0;
         min-height: 30px;
 
         &--pos {
           position: absolute;
-          left: 20px;
+          left: -12px;
           top: -9px;
+          z-index: 2;
         }
       }
     }
@@ -89,12 +127,21 @@
       }
     }
 
+    &__icon {
+      position: relative;
+      z-index: 3;
+    }
+
+    &__text {
+      pointer-events: auto;
+    }
+
     &__sort {
       flex-direction: column;
       align-items: start;
       border-radius: 10px;
       background-color: #fff;
-      padding: 12px;
+      padding: 12px 12px 12px 40px;
 
       &-text {
         &--active {

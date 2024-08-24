@@ -2,7 +2,8 @@
   @include fluid(margin-top, 80px, 100px);
   @include fluid(margin-bottom, 80px, 140px);
 
-  &:has(.content__profile) {
+  &:has(.content__profile),
+  &:has(.content__favorites) {
     margin: 0;
   }
 
@@ -191,14 +192,23 @@
     @include fluid(right, 16px, 28px);
     top: 710px;
   }
+
+  &__profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 165px));
+    gap: 6px;
+  }
+
+  &__favorites {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    @include fluid(row-gap, 24px, 40px);
+  }
 }
 
 @media(max-width:992px) {
   .content {
-    &:has(.content__profile) {
-      width: 49%;
-    }
-
     &__inner {
 
       &--typeOneAlt {
@@ -353,25 +363,45 @@
       }
     }
 
-    &__profile {
-      .content__swiper--small {
-
-        .content__slide {
-          &-box {
-            height: 123px;
-          }
-
-          &-img {
-            border-radius: 5px;
-          }
-        }
-      }
-    }
-
     &__inner {
       &--typeOne {
         grid-template-columns: repeat(2, 1fr);
       }
+    }
+
+    &__profile {
+      grid-template-columns: repeat(auto-fill, 80px);
+
+      .favorite {
+        top: 6px;
+        right: 6px;
+
+      }
+
+      .content {
+        &__swiper {
+          &--small {
+
+            .content__slide {
+              &-box {
+                height: 123px;
+              }
+
+              &-img {
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+
+        &__customPagination {
+          top: 90px;
+        }
+      }
+    }
+
+    &__favorites {
+      grid-template-columns: 1fr;
     }
   }
 }

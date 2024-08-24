@@ -2,11 +2,20 @@ document.addEventListener('DOMContentLoaded', () => {
 	const body = document.querySelector('body')
 	const burger = document.querySelector('.burger')
 	const menu = document.querySelector('.menu')
-	const close = document.querySelector('.menu__close')
 	const filterSort = document.querySelectorAll('.filter__sort-text')
 	const basket = document.querySelector('.basket')
 	const product = document.querySelector('.product')
 	const form = document.querySelector('.form')
+	const box = document.querySelectorAll('.form__inner-box')
+	const discount = document.querySelector('.discount')
+	const tabs = document.querySelectorAll('.tab__target')
+	const pages = document.querySelectorAll('.tab__info')
+	const accordionNext = document.querySelectorAll('.accordionNext')
+	const accordion = document.querySelectorAll('.accordion')
+	const count = document.querySelectorAll('.count')
+	const goto = document.querySelectorAll('[class][data-goto]')
+	const filter = document.querySelector('.filter')
+	const modal = document.querySelectorAll('.modal')
 
 	const toggleMenu = () => {
 		menu.classList.toggle('menu--active')
@@ -22,9 +31,102 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
-	close?.addEventListener('click', toggleMenu)
 	burger?.addEventListener('click', toggleMenu)
 	document.addEventListener('click', clickOutsideMenu)
+
+	if (modal) {
+		modal.forEach(item => {
+			const close = item.querySelector('.close')
+			const passwordIcon = item.querySelectorAll('.form__label-icon')
+
+			passwordIcon?.forEach(function (icon) {
+				icon?.addEventListener('click', () => {
+					const passwordInput = icon.previousElementSibling
+
+					if (passwordInput.type === 'password') {
+						passwordInput.type = 'text'
+					} else {
+						passwordInput.type = 'password'
+					}
+				})
+			})
+
+			close.addEventListener('click', () => {
+				item.classList.remove('modal--active')
+			})
+		})
+	}
+
+	if (filter) {
+		const filterOpen = filter?.querySelector('.filter--open')
+		const modal = filter?.querySelector('.filter__modal')
+		const close = filter?.querySelector('.close')
+		filterOpen.addEventListener('click', () => {
+			modal.classList.add('filter__modal--active')
+			body.classList.add('no-scroll')
+		})
+		close.addEventListener('click', () => {
+			modal.classList.remove('filter__modal--active')
+			body.classList.remove('no-scroll')
+		})
+	}
+
+	box?.forEach(item => {
+		const editButton = item.querySelector('.btn--edit')
+		const inputFields = item.querySelectorAll('.form__label-input')
+		const passwordIcon = item.querySelectorAll('.form__label-icon')
+
+		editButton.addEventListener('click', () => {
+			inputFields.forEach(input => {
+				input.disabled = !input.disabled
+			})
+
+			if (editButton.textContent === 'сохранить') {
+				editButton.textContent = 'редактировать'
+			} else {
+				editButton.textContent = 'сохранить'
+			}
+		})
+
+		passwordIcon?.forEach(function (icon) {
+			icon?.addEventListener('click', () => {
+				const passwordInput = icon.previousElementSibling
+
+				if (passwordInput.type === 'password') {
+					passwordInput.type = 'text'
+				} else {
+					passwordInput.type = 'password'
+				}
+			})
+		})
+	})
+
+	if (discount) {
+		const line = discount.querySelector('.discount__block')
+		const text = discount.querySelector('.discount__block-text')
+		const ellipse = discount.querySelectorAll('.discount__nums-ellipse')
+		const linePercent = parseInt(line.dataset.line)
+		const percent = linePercent
+
+		line.style.width = `${percent}%`
+
+		ellipse.forEach((item, i) => {
+			item.style.backgroundColor = ''
+
+			if (percent === 100) {
+				item.style.backgroundColor = '#ff4d26'
+				text.classList.add('discount__block-text--right')
+			} else if (percent >= 70) {
+				if (i < 4) item.style.backgroundColor = '#ff4d26'
+			} else if (percent >= 50) {
+				if (i < 3) item.style.backgroundColor = '#ff4d26'
+			} else if (percent >= 30) {
+				if (i < 2) item.style.backgroundColor = '#ff4d26'
+			} else if (percent >= 0) {
+				if (i < 1) item.style.backgroundColor = '#ff4d26'
+			}
+		})
+	}
 
 	if (form) {
 		const formSelect = form.querySelector('.form__accordion')
@@ -97,6 +199,13 @@ document.addEventListener('DOMContentLoaded', () => {
 				item.classList.remove('filter__sort-text--active')
 			})
 			this.classList.add('filter__sort-text--active')
+			accordionNext?.forEach(acc => {
+				const content = acc.nextElementSibling
+				if (acc.classList.contains('accordionNext--active')) {
+					acc.classList.remove('accordionNext--active')
+					content.style.maxHeight = '0'
+				}
+			})
 		})
 	})
 
@@ -131,9 +240,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	}
 
-	const tabs = document.querySelectorAll('.tab__target')
-	const pages = document.querySelectorAll('.tab__info')
-
 	handleTabClick(
 		tabs,
 		pages,
@@ -141,8 +247,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		'tab__info--active',
 		'tab__info--opacity'
 	)
-
-	const accordionNext = document.querySelectorAll('.accordionNext')
 
 	accordionNext?.forEach(acc => {
 		acc.addEventListener('click', e => {
@@ -158,8 +262,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	})
 
-	const accordion = document.querySelectorAll('.accordion')
-
 	accordion?.forEach(acc => {
 		acc.addEventListener('click', e => {
 			e.preventDefault()
@@ -173,39 +275,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		})
 	})
-
-	const accordionIndex = document.querySelectorAll('.accordionIndex')
-	const contents = document.querySelectorAll('.accordionIndex-content')
-	if (innerWidth < 768) {
-		accordionIndex?.forEach((acc, index) => {
-			acc.addEventListener('click', e => {
-				e.preventDefault()
-				const content = contents[index]
-
-				if (acc.classList.contains('accordionIndex--active')) {
-					acc.classList.remove('accordionIndex--active')
-					content.style.maxHeight = '0'
-				} else {
-					acc.classList.add('accordionIndex--active')
-					content.style.maxHeight = content.scrollHeight + 'px'
-				}
-			})
-		})
-	}
-
-	document.addEventListener('click', e => {
-		const isAccordionClicked = e.target.closest('.accordionIndex')
-
-		if (!isAccordionClicked) {
-			accordionIndex.forEach((acc, index) => {
-				const content = contents[index]
-				acc.classList.remove('accordionIndex--active')
-				content.style.maxHeight = '0'
-			})
-		}
-	})
-
-	const count = document.querySelectorAll('.count')
 
 	count?.forEach(element => {
 		element.addEventListener('click', function (event) {
@@ -225,8 +294,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		})
 	})
-
-	const goto = document.querySelectorAll('[class][data-goto]')
 
 	if (goto.length > 0) {
 		goto.forEach(item => {

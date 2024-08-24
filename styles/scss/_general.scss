@@ -137,6 +137,7 @@ body {
   align-items: center;
 
   svg {
+    circle,
     path {
       transition: fill 0.23s ease-in-out, stroke 0.23s ease-in-out;
     }

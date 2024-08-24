@@ -31,12 +31,16 @@
     border-radius: 20px;
     border: 1px solid #FF4D26;
     overflow: hidden;
+    padding-bottom: 24px;
 
     &-title {
       padding: 24px;
+      @include fluid(padding-top, 12px, 24px);
+      @include fluid(padding-bottom, 12px, 24px);
       font-weight: 600;
       background-color: #FF4D26;
       letter-spacing: .4em;
+      text-transform: uppercase;
     }
 
     &-box {
@@ -50,6 +54,7 @@
       font-size: 24px;
       color: #FF4D26;
       letter-spacing: .05em;
+      text-transform: uppercase;
     }
 
     &-text {
@@ -84,6 +89,90 @@
     &-text {
       span {
         color: #FF4D26;
+      }
+    }
+  }
+
+  &__discount {
+    @include fluid(max-width, 768px, 940px);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #FF4D26;
+
+    &-lvl {
+      padding: 24px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: .4em;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, .05);
+    }
+
+    &-block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      @include fluid(padding, 12px, 24px);
+    }
+
+    &-title {
+      position: relative;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      padding-right: 100px;
+      @include fluid(font-size, 30px, 48px);
+      text-transform: uppercase;
+      color: #fff;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 15px;
+        width: 100px;
+        height: 12px;
+        background-image: url('../../assets/images/icons/discount-arrow.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+      }
+    }
+
+    &-text {
+      max-width: 250px;
+      color: #fff;
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    &-link {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      font-size: 14px;
+      color: #fff;
+      border-bottom: 1px dashed #fff;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .bonus {
+    &__discount {
+      &-title {
+        width: 100%;
+        padding-right: 0;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &-text {
+        display: none;
       }
     }
   }

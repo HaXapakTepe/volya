@@ -1,0 +1,29 @@
+.close {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  z-index: 5;
+  cursor: pointer;
+  margin-left: auto;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 16px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: #C2C2C2;
+    border-radius: 3px;
+    transition: all .23s ease-in-out;
+  }
+
+  &::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}

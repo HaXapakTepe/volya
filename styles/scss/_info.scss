@@ -14,8 +14,30 @@
 
   &__inner {
     display: grid;
-    grid-template-columns: 1fr 350px;
+    grid-template-columns: 1fr;
     @include fluid(gap, 48px, 90px);
+
+    &:has(.info__inner-box+.info__inner-box) {
+      grid-template-columns: 1fr 350px;
+    }
+
+    &-box {
+      max-width: 825px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &:has(+.info__textBold) {
+      margin-bottom: 30px
+    }
+    
+    a {
+      color: #FF4D26;
+      text-decoration: underline;
+    }
   }
 
   &__text {
@@ -23,12 +45,33 @@
       margin-bottom: 30px;
     }
 
+    &:has(+.info__ul) {
+      margin-bottom: 0;
+    }
+
+    a,
     span {
       color: #FF4D26;
     }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &__textBold {
+    font-weight: 500;
   }
 
   &__box {
+    &:has(+*) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__ul {
+    list-style: inside;
+
     &:has(+*) {
       margin-bottom: 30px;
     }
