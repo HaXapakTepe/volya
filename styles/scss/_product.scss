@@ -65,6 +65,7 @@
   }
 
   &__box {
+    position: -webkit-sticky;
     position: sticky;
     top: 20px;
     display: flex;
@@ -78,6 +79,7 @@
     gap: 24px;
 
     &--alt {
+      position: -webkit-sticky;
       position: sticky;
       left: 0;
       bottom: 0;
@@ -87,6 +89,12 @@
       background-color: #F0F0F0;
       box-shadow: 0 -1px 34px rgba(0, 0, 0, 0.25);
       display: none;
+      transition: padding 0.23s ease-in-out, background-color 0.23s ease-in-out, box-shadow 0.23s ease-in-out;
+    }
+
+    &--bottom {
+      box-shadow: none;
+      background-color: transparent;
     }
 
     &-top {
@@ -171,6 +179,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    transition: opacity .23s ease-in-out, visibility .23s ease-in-out, z-index .23s ease-in-out;
 
     &-box {
       display: flex;
@@ -213,8 +222,6 @@
         background-size: contain;
         transition: transform .23s ease-in-out;
       }
-
-
     }
 
     &-text {
@@ -268,13 +275,25 @@
     &__inner {
       grid-template-columns: 1fr;
     }
+
+    &__form {
+      &-price {
+        grid-column: 2;
+        text-align: right;
+      }
+    }
   }
 }
 
 @media(max-width:576px) {
   .product {
+    &__inner {
+      gap: 24px;
+    }
+
     &__item {
       grid-template-columns: 1fr;
+      margin-bottom: 16px;
 
       &-small {
         display: none;
@@ -282,13 +301,47 @@
     }
 
     &__form {
+      display: none;
+
       &--alt {
         display: flex;
+        margin-top: 54px;
+
+        .product__colors {
+          display: none;
+          opacity: 0;
+          z-index: -1;
+          visibility: hidden;
+        }
+
+        .product__form-article {
+          display: none;
+        }
+      }
+
+      &--bottom {
+        position: relative;
+        padding: 0;
+        top: 1px;
+
+        .product__colors {
+          display: block;
+          opacity: 1;
+          z-index: 1;
+          visibility: visible;
+        }
+
+        .product__form-article {
+          display: block;
+        }
+      }
+
+      &-title {
+        grid-row: span 2;
       }
 
       &-article {
-        grid-column: 1;
-        text-align: left;
+        text-align: right;
       }
 
       &-price {

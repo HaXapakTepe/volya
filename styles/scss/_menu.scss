@@ -55,11 +55,24 @@
     flex-wrap: wrap;
     gap: 24px;
 
-    &-column,
+    
     &-item {
       display: flex;
       flex-direction: column;
-      @include fluid(gap, 16px, 24px);
+      @include fluid(gap, 12px, 24px);
+
+      &--black {
+        .menu__list-link {
+          color: #000706
+        }
+      }
+    }
+
+    &-column {
+      display: flex;
+      flex-direction: column;
+      @include fluid(row-gap, 16px, 24px);
+      @include fluid(column-gap, 6px, 24px);
     }
 
     &-title {
@@ -99,6 +112,7 @@
       width: fit-content;
       color: #fff;
       text-transform: uppercase;
+      @include fluid(font-size, 12px, 16px);
 
       &::after {
         content: '';

@@ -13,7 +13,9 @@
   &__inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
-    gap: 6px;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    row-gap: 12px;
 
     &:has(+*) {
       @include fluid(margin-bottom, 20px, 40px);
@@ -106,7 +108,7 @@
 
     &-title {
       position: relative;
-      @include fluid(font-size, 16px, 24px);
+      font-size: 24px;
       text-transform: uppercase;
       z-index: 1;
       color: #fff;

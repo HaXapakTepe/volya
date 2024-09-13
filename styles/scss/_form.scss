@@ -13,6 +13,12 @@
     object-fit: contain;
   }
 
+  &__top {
+    .btn {
+      letter-spacing: unset;
+    }
+  }
+
   &__subtitle {
     font-size: 16px;
     text-transform: uppercase;
@@ -46,7 +52,7 @@
     &:has(.form__inner-box+.form__inner-box) {
       grid-template-columns: repeat(2, minmax(350px, -webkit-max-content));
       grid-template-columns: repeat(2, minmax(350px, max-content));
-    }    
+    }
 
     &-box {
       max-width: 350px;
@@ -65,6 +71,15 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
+    }
+
+    &-img {
+      position: relative;
+      @include fluid(margin-top, 0px, -50px);
+      @include fluid(width, 382px, 394px);
+      @include fluid(height, 294px, 304px);
+      -o-object-fit: contain;
+      object-fit: contain;
     }
   }
 
@@ -143,6 +158,8 @@
       bottom: 0;
       width: 100%;
       max-width: 246px;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
       height: fit-content;
       padding: 24px 12px;
       background-color: #fff;
@@ -156,6 +173,8 @@
     }
 
     &-text {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
       width: fit-content;
       font-size: 12px;
       color: #5B5B5B;
@@ -302,6 +321,8 @@
     gap: 12px;
 
     &-text {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
       width: fit-content;
       margin-left: auto;
       margin-right: auto;
@@ -323,7 +344,7 @@
     &__inner {
       &:has(.form__inner-box+.form__inner-box) {
         grid-template-columns: 1fr;
-      } 
+      }
 
       &-box {
         max-width: unset;

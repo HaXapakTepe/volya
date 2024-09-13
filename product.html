@@ -84,7 +84,7 @@
               </div>
             </div>
           </li>
-          <li class="menu__list-item">
+          <li class="menu__list-item menu__list-item--black">
             <div class="menu__list-column">
               <a class="menu__list-link" href="#">
                 Главная страница
@@ -175,21 +175,26 @@
               <div class="product__item">
                 <div class="product__item-big">
                   <div class="product__item-box">
-                    <img class="product__item-big__img" src="./assets/images/product/1.png" alt="">
+                    <img class="product__item-big__img item-1" src="./assets/images/product/1.png" alt="">
                   </div>
                   <div class="product__item-box">
-                    <img class="product__item-big__img" src="./assets/images/product/2.png" alt="">
+                    <img class="product__item-big__img item-2" src="./assets/images/product/2.png" alt="">
                   </div>
                   <div class="product__item-box">
-                    <img class="product__item-big__img" src="./assets/images/product/3.png" alt="">
+                    <img class="product__item-big__img item-3" src="./assets/images/product/3.png" alt="">
                   </div>
                   <div class="product__item-box">
-                    <img class="product__item-big__img" src="./assets/images/product/4.png" alt="">
+                    <img class="product__item-big__img item-4" src="./assets/images/product/4.png" alt="">
                   </div>
                   <form class="product__form product__form--alt" action="" method="post">
                     <div class="product__form-top">
                       <p class="product__form-title">
                         Базовая футболка прямая унисекс 3.0
+                      </p>
+                      <p class="product__form-article">
+                        Артикул:
+                        <br>
+                        БФПУБ-003/24
                       </p>
                       <p class="product__form-price">
                         5 240 ₽
@@ -236,6 +241,37 @@
                           Таблица размеров
                         </a>
                       </div>
+                      <div class="product__colors">
+                        <p class="product__subtitle">
+                          Цвет
+                        </p>
+                        <div class="product__colors-box">
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" checked />
+                            <span class="label__inputCustom" style="background-color: #4579E5;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #88B3F9;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #EEEB4F;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #96D45A;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #DA9434;"></span>
+                          </label>
+                          <label class="label label--color">
+                            <input class="label__input check" type="radio" name="color" />
+                            <span class="label__inputCustom" style="background-color: #EE732F;"></span>
+                          </label>
+                        </div>
+                      </div>
                       <div class="product__form-buttons">
                         <button class="btn btn--accent">
                           в корзину
@@ -256,10 +292,10 @@
                   </form>
                 </div>
                 <div class="product__item-small">
-                  <img class="product__item-small__img active" src="./assets/images/product/1.png" alt="">
-                  <img class="product__item-small__img" src="./assets/images/product/2.png" alt="">
-                  <img class="product__item-small__img" src="./assets/images/product/3.png" alt="">
-                  <img class="product__item-small__img" src="./assets/images/product/4.png" alt="">
+                  <img class="product__item-small__img active" src="./assets/images/product/1.png" alt="" data-goto=".item-1">
+                  <img class="product__item-small__img" src="./assets/images/product/2.png" alt="" data-goto=".item-2">
+                  <img class="product__item-small__img" src="./assets/images/product/3.png" alt="" data-goto=".item-3">
+                  <img class="product__item-small__img" src="./assets/images/product/4.png" alt="" data-goto=".item-4">
                 </div>
               </div>
             </div>

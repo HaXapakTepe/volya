@@ -242,15 +242,18 @@
       }
 
       &--typeThree {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
 
         .content__swiper {
+          width: 49%;
+
           &:nth-child(2) {
-            grid-row: unset;
+            margin-left: auto;
           }
 
           &:last-child {
-            grid-area: unset;
+            width: 100%;
           }
         }
       }
@@ -285,6 +288,7 @@
             }
           }
         }
+
         +.content__swiper--small {
           margin-left: auto;
         }

@@ -12,6 +12,11 @@
     @include fluid(margin-bottom, 20px, 23px);
     @include fluid(letter-spacing, 1px, 35px);
   }
+  
+  &--info {
+    max-width: 700px;
+    @include fluid(letter-spacing, 1px, 45px);
+  }
 
   &--left {
     text-align: left;

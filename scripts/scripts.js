@@ -34,6 +34,32 @@ document.addEventListener('DOMContentLoaded', () => {
 	burger?.addEventListener('click', toggleMenu)
 	document.addEventListener('click', clickOutsideMenu)
 
+	const productItemBig = document.querySelector('.product__item-big')
+	const productForm = document.querySelector('.product__form')
+
+	if (product) {
+		if (window.innerWidth <= 576) {
+			window.addEventListener('scroll', function () {
+				const productItemBigRect = productItemBig.getBoundingClientRect()
+				const productFormRect = productForm.getBoundingClientRect()
+
+				if (productFormRect.bottom + 30 >= productItemBigRect.bottom + 30) {
+					productForm.classList.add('product__form--bottom')
+				} else {
+					productForm.classList.remove('product__form--bottom')
+				}
+
+				// Проверка, если productForm полностью вышел из зоны видимости
+				if (
+					productFormRect.top > window.innerHeight ||
+					productFormRect.bottom < 0
+				) {
+					productForm.classList.remove('product__form--bottom')
+				}
+			})
+		}
+	}
+
 	if (modal) {
 		modal.forEach(item => {
 			const close = item.querySelector('.close')
@@ -61,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const filterOpen = filter?.querySelector('.filter--open')
 		const modal = filter?.querySelector('.filter__modal')
 		const close = filter?.querySelector('.close')
+		const btn = modal?.querySelector('.btn')
 		filterOpen?.addEventListener('click', () => {
 			modal.classList.add('filter__modal--active')
 			body.classList.add('no-scroll')
@@ -68,6 +95,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		close?.addEventListener('click', () => {
 			modal.classList.remove('filter__modal--active')
 			body.classList.remove('no-scroll')
+		})
+		btn?.addEventListener('click', () => {
+			const productForm = filter?.querySelectorAll('.product__form')
+			productForm.forEach(element => {
+				const label = element.querySelectorAll('.label__input')
+				label.forEach(item => {
+					console.log(item)
+					item.checked = false
+				})
+			})
+		})
+		modal.addEventListener('click', e => {
+			if (e.target === modal) {
+				modal.classList.remove('filter__modal--active')
+				body.classList.remove('no-scroll')
+			}
 		})
 	}
 
@@ -175,22 +218,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				item.remove()
 			})
 		})
-	}
-
-	if (product) {
-		addDataGoto()
-
-		function addDataGoto() {
-			const bigImages = product.querySelectorAll('.product__item-big__img')
-			const smallImages = product.querySelectorAll('.product__item-small__img')
-
-			smallImages.forEach((smallImg, index) => {
-				smallImg.setAttribute('data-goto', `.item-${index + 1}`)
-			})
-			bigImages.forEach((bigImg, index) => {
-				bigImg.classList.add(`item-${index + 1}`)
-			})
-		}
 	}
 
 	filterSort?.forEach(item => {
@@ -303,7 +330,6 @@ document.addEventListener('DOMContentLoaded', () => {
 					item.classList.remove('active')
 				})
 				this.classList.add('active')
-				addDataGoto()
 			})
 		})
 
@@ -330,18 +356,28 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	if (document.querySelector('.promo__swiper')) {
-		var promoSwiper = new Swiper('.promo__swiper', {
+    var swiperTitle = new Swiper('.promo__swiperTitle', {
 			slidesPerView: 1,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true 
+      },
+      allowTouchMove: false
+		})
+
+    var promoSwiper = new Swiper(".promo__swiper", {
+      slidesPerView: 1,
 			spaceBetween: 20,
-			loop: true,
-			pagination: {
+      pagination: {
 				el: '.promo__swiper-pagination',
 			},
-		})
+      thumbs: {
+        swiper: swiperTitle,
+      },
+    });
 	}
 
 	const contentSwipers = []
-
 	const contentSwiper = document.querySelectorAll('.content__swiper')
 	if (contentSwiper) {
 		contentSwiper.forEach(swiper => {
